@@ -8,18 +8,66 @@
 <body>
 	<section id="topBar"></section><!--end topBar-->
 	<div id="siteContainer">
-    	<header id="mainHeader">
-        	<div id="logo"><p>Logo</p></div><!--end logo-->
-            <nav id="mainNav"><p>Nav</p></nav><!--end mainNav-->
-        </header><!--end mainHeader-->
-        <section id="contentCon">
-        	<div id="content1"><p>Content Area 1</p></div><!--end content1-->
-        	<div id="content2"><p>Content Area 2</p></div><!--end content2-->
+    	
+        <header id="mainHeader">
+            <div class="logoHeader">
+                <img src="images/logofinal.png" alt= "UpGrowth Logo" width="250" height="75" id="logo">
+            </div>
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="selected"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="galleryContent">
+        	<div id="hayden">
+                <img src="images/gallery-hayden.jpg" alt="photo of artist, hayden">
+                   
+                    <div class="overlayText">
+                    <h2><a href="#">Hayden's Work</a></h2>
+                    </div>
+                    
+            </div><!--end content1-->
+
+        	<div id="simon">
+                <img src="images/gallery-simon.jpg" alt="photo of artist, simon">
+                
+                <div class="overlayText">
+                    <h2><a href="#">Simon's Work</a></h2>
+                </div>
+            
+            </div><!--end content2-->
         </section><!--end contentCon-->
-        <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+        
+
+         <footer id="mainFooter">
+
+            <h2 class="hidden">Footer Navigation</h2>
+            
+            <img src="images/logofinal.png" id=footerLogo alt="UpGrowth Logo">
+            
+            <nav id="footerNav">
+                <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="selected"><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Join Us</a></li>
+                </ul>
+            </nav>
+            <div id="copyRight">
+                <p>Copyright © 2018  UpGrowth inc. /n All Rights Reserved</p>
+            </div><!--end Copyright-->
+        
         </footer><!--end mainFooter-->
+    
+
     </div><!--end siteContainer-->
 <script src="js/main.js"></script>    
 </body>

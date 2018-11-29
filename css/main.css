@@ -1,18 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
-/*p
-{
-	color: #fff;
-	line-height: 100px;
-	text-align: center;
-	margin: 0;
-}
-*/
-
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
@@ -33,11 +21,11 @@ img
 
 body 
 {
+	background-color: #c8d3d5;
 	font-family: "Marion";
 	font-size: 12px;
 	color: #333;
-	background-color: #c8d3d5;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23736372' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23736372' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 
@@ -194,6 +182,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
+
+/*footer*/
 #footerNav 
 {
 	margin-left: 20px;
@@ -232,7 +222,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 {
 	margin-right: auto;
 	width: 200px;
-	height: 75px;
+	height: 65px;
 }
 
 #copyRight 
@@ -244,76 +234,141 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 310px;
 }
 
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
+/*Gallery*/
 
-#contentCon {
+#galleryContent 
+{
 	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
+	border-bottom: solid 2px #000;
 	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+  	justify-content: space-evenly;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
+.overlayText
 {
-	line-height: 630px;
+	text-align: center;
+	color: #FFF;
+	font-size: 24px;
+	margin-bottom: 200;
 }
 
-#content1 
+.overlayText a
 {
-	width: 440px;
+	color: #FFF;
 }
 
-#content2 
+.overlayText a:hover
+{
+	color: #b89eb4;
+}
+
+#simon 
 {
 	margin-left: auto;
 	width: 440px;
 }
 
-/*Page 3*/
-
-#productImages 
+#hayden
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+	margin-right: auto;
+	width: 440px;
+}
+
+/*Contact us Page*/
+#contact
+{
+	margin-top: 25px;
+	width: 902px;
+	height: 250px;
+	background: url(../images/pic7-Contact.jpg) no-repeat bottom;
+	border: solid 2px #000;	
+}
+
+#contact h2
+{
+	margin-top: 110px;
+	margin-bottom: 120px;
+	text-align: center;
+	font-size: 35px;
+	color: #FFF;
+}
+
+.contactContent
+{
+	margin-top: 25px; 
+	width: 902px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
-/*Get rid of this, here just to give different height*/
-#productImages p
+.contactLeft
 {
-	line-height: 250px;
+	width: 403px;
+	height: 562px;
+	margin-right: auto;
+	background: url(../images/img-contact.jpg) no-repeat;
 }
 
-.productImg 
+.contactRight
 {
-	width: 280px;
+	margin-left: auto; 
+	width: 403px;
+	height: 562px;
+	background: url(../images/pic9-abttext.jpg) no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-
-#contentAreaBig
+.contactRight p
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 24px;
+	color: #5c6b73;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 25px;
 }
 
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
+#contactForm
 {
-	line-height: 300px;
+	color: #5c6b73;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
-.promoImage
+input, textarea
 {
-	width: 902px;
+	display: block;
+	padding: 10px;
+	margin-left: 100px;
+	margin-right: 103px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	border: 1px solid #000;
+	background-color: #efefef;
 }
 
+#submit
+{
+	width: 75px;
+	height: 30px;
+	padding: 5px;
+	background-color: #5c6b73;
+	color: #fff;
+	border: 1px solid #000;
+	margin: auto;
+}
+
+#submit:hover
+{
+	background-color: #b89eb4;
+}
 
 /*about us page*/
 #about
